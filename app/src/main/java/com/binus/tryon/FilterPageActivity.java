@@ -47,7 +47,7 @@ import androidx.lifecycle.LifecycleOwner;
 import ai.deepar.ar.DeepARImageFormat;
 import ai.deepar.deepar_example.R;
 
-public class MainActivity extends AppCompatActivity implements SurfaceHolder.Callback, AREventListener {
+public class FilterPageActivity extends AppCompatActivity implements SurfaceHolder.Callback, AREventListener {
 
     // Default camera lens value, change to CameraSelector.LENS_FACING_BACK to initialize with back camera
     private int defaultLensFacing = CameraSelector.LENS_FACING_FRONT;
@@ -201,16 +201,16 @@ public class MainActivity extends AppCompatActivity implements SurfaceHolder.Cal
             }
         });
 
-        ImageButton openActivity = findViewById(ai.deepar.deepar_example.R.id.openActivity);
-        openActivity.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myIntent = new Intent(MainActivity.this, BasicActivity.class);
-                MainActivity.this.startActivity(myIntent);
-            }
-
-
-        });
+//        ImageButton openActivity = findViewById(ai.deepar.deepar_example.R.id.openActivity);
+//        openActivity.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent myIntent = new Intent(FilterPageActivity.this, BasicActivity.class);
+//                FilterPageActivity.this.startActivity(myIntent);
+//            }
+//
+//
+//        });
 
 
 
@@ -574,8 +574,8 @@ public class MainActivity extends AppCompatActivity implements SurfaceHolder.Cal
             bitmap.compress(Bitmap.CompressFormat.JPEG, quality, outputStream);
             outputStream.flush();
             outputStream.close();
-            MediaScannerConnection.scanFile(MainActivity.this, new String[]{imageFile.toString()}, null, null);
-            Toast.makeText(MainActivity.this, "Screenshot " + imageFile.getName() + " saved.", Toast.LENGTH_SHORT).show();
+            MediaScannerConnection.scanFile(FilterPageActivity.this, new String[]{imageFile.toString()}, null, null);
+            Toast.makeText(FilterPageActivity.this, "Screenshot " + imageFile.getName() + " saved.", Toast.LENGTH_SHORT).show();
         } catch (Throwable e) {
             e.printStackTrace();
         }
