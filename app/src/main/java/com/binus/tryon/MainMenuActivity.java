@@ -22,8 +22,30 @@ public class MainMenuActivity extends AppCompatActivity {
 
         binding.searchByProduct.setOnClickListener(v -> {
             Intent intent = new Intent(this, ProductActivity.class);
+            intent.putExtra(ProductActivity.EXTRA_PAGE, "Product");
             startActivity(intent);
         });
+        binding.searchByBrand.setOnClickListener(v -> {
+            Intent intent = new Intent(this, ProductActivity.class);
+            intent.putExtra(ProductActivity.EXTRA_PAGE, "Brand");
+            startActivity(intent);
+        });
+        binding.searchByEye.setOnClickListener(v -> {
+            Intent intent = new Intent(this, ProductActivity.class);
+            intent.putExtra(ProductActivity.EXTRA_PAGE, "Eye");
+            startActivity(intent);
+        });
+        binding.searchByFace.setOnClickListener(v -> {
+            Intent intent = new Intent(this, ProductActivity.class);
+            intent.putExtra(ProductActivity.EXTRA_PAGE, "Face");
+            startActivity(intent);
+        });
+        binding.searchByLip.setOnClickListener(v -> {
+            Intent intent = new Intent(this, ProductActivity.class);
+            intent.putExtra(ProductActivity.EXTRA_PAGE, "Lip");
+            startActivity(intent);
+        });
+
 
     }
 }

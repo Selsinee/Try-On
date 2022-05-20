@@ -4,4 +4,14 @@
     <color name="colorPrimaryDark">#F1CFCF</color>
     <color name="colorAccent">#D81B60</color>
     <color name="black">#000000</color>
+    <color name="vampireBlood">#960303</color>
+    <color name="cherryBomb">#CE1C1C</color>
+    <color name="candyApple">#F03838</color>
+    <color name="redWine">#B00707</color>
+    <color name="cranberry">#C81E1E</color>
+    <color name="pumpkin">#F06947</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#f6f6f6</color>
+    <color name="blackVariant">#111111</color>
+    <color name="softGray">#E8E6E7</color>
 </resources>
