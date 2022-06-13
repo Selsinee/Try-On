@@ -28,7 +28,6 @@ class ProductActivity : AppCompatActivity() {
         binding = ActivityProductBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
         val toolbar = findViewById<Toolbar>(R.id.custom_toolbar)
         setSupportActionBar(toolbar)
 
@@ -100,11 +99,11 @@ class ProductActivity : AppCompatActivity() {
 
         var isBrandProducts = false
         when(page){
-            "Brand" -> { productData = DummyData.getLipProducts() }
-            "Product" -> { productData = DummyData.getLipProducts() }
+            "Brand" -> { productData = DummyData.getBrands() }
+            "Product" -> { productData = DummyData.getAllProducts() }
             "Lip" -> { productData = DummyData.getLipProducts() }
-            "Face" -> { productData = DummyData.getLipProducts() }
-            "Eye" -> { productData = DummyData.getLipProducts() }
+            "Face" -> { productData = DummyData.getFaceProducts() }
+            "Eye" -> { productData = DummyData.getEyeProducts() }
             else -> {
                 isBrandProducts = true
                 productData = DummyData.getLipProducts()

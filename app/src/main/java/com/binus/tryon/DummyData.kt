@@ -17,7 +17,7 @@ object DummyData {
                 Variant("Pumpkin", R.color.pumpkin),
             )),
             Product(2, "Intense Matte Lip Cream", "Rp. 109.000,00", "Make over", R.drawable.intense_matte_lip_cream, arrayListOf()),
-            Product(3, "Glossy Stain", "Rp. 23.500,00", "EMINA", R.drawable.implora, arrayListOf()),
+            Product(3, "Glossy Stain", "Rp. 23.500,00", "EMINA", R.drawable.glossy_stain, arrayListOf()),
             Product(4, "Lip Gloss", "Rp. 50.100,00", "ESQA", R.drawable.lip_gloss_esqa, arrayListOf()),
             Product(5, "Color Stick Matte Crayon", "Rp. 150.400,00", "Make over", R.drawable.color_stick_matte_crayon, arrayListOf()),
             Product(6, "Lip Cushion", "Rp. 100.800,00", "Emina", R.drawable.lip_cushion_emina, arrayListOf()),
