@@ -516,6 +516,10 @@ public class FilterPageActivity extends AppCompatActivity implements SurfaceHold
         return "file:///android_asset/" + filterName;
     }
 
+    private void changeFilter(String currFilter){
+        deepAR.switchEffect("filter", getFilterPath(currFilter));
+    }
+
     private void gotoNext() {
         if (activeFilterType == 0) {
             currentMask = (currentMask + 1) % masks.size();
